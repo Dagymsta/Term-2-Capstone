@@ -1,0 +1,57 @@
+@mixin title-bar-buttons{
+    width:200px;
+    background-color: transparent;
+    border: transparent;
+    font-weight: bold;
+    font-size: large;
+    font-family: 'Times New Roman', Times, serif;
+    &:hover{
+        border-bottom: Black solid 3px;
+        cursor: pointer
+    }
+}
+.navbar{
+    display:flex;
+    flex-direction: column;
+    height:105px;
+    border-bottom: black solid 4px;
+    .title-bar{
+        display:flex;
+        height:70px;
+        color: white;
+        background-color: #15374f;
+        border-bottom: black solid 3px;
+        .logo{
+            display: flex;
+            align-items: center;
+            padding-left: 30px;
+            width:50%;
+        }
+        .shopping-cart{
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            padding-right: 30px;
+            width: 50%;
+        }
+    }
+    .product-link-bar{
+        display: flex;
+        justify-content: space-around;
+        width:75%;
+        height: 30px;
+        .home{
+           @include title-bar-buttons;
+        }
+        .products{
+            @include title-bar-buttons;
+        }
+        .contact{
+            @include title-bar-buttons;
+        }
+        .about{
+            @include title-bar-buttons;
+        }
+            
+    }
+}

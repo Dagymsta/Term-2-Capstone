@@ -1,0 +1,52 @@
+.main-page-content{
+   
+    display: flex;
+    flex-direction: column ;
+    margin-bottom: 40px;
+    .clothing-ad-container{
+        
+        display: flex;
+        height:600px;
+        
+        .image-left{
+            border: red solid 1px;
+            display: flex;
+            width: 50%;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .advertisement{
+            
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 50%;
+            .ad-button-wrapper{
+          
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                width:75%;
+                height: 300px;
+                button{
+                    height: 30%;
+                    margin-top: 10px;
+                    background-color: #38393b;
+                    border-radius: 20px;
+                    color: white;
+                    font-size: xx-large;
+                        &:hover{
+                            cursor: pointer;
+                            background-color: white;
+                            color:#38393b ;
+
+                        }
+                }
+                
+            }
+        }
+        
+    }
+}
