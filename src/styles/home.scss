@@ -30,7 +30,11 @@
                 justify-content: center;
                 width:75%;
                 height: 300px;
-                button{
+                .buttons{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    text-decoration: none;
                     height: 30%;
                     margin-top: 10px;
                     background-color: #38393b;
@@ -41,6 +45,7 @@
                             cursor: pointer;
                             background-color: white;
                             color:#38393b ;
+                            border: black solid 1px;
 
                         }
                 }

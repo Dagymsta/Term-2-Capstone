@@ -1,13 +1,13 @@
-
+import { NavLink } from "react-router-dom"
 export default function Footer() {
 
     return(
     <div className="footer">
-            <button className="about-route">About</button>
+            <NavLink className="footer-button" to="/about">About</NavLink>
 
-            <button className="contact-route">Contact</button>
+            <NavLink className="footer-button" to="/contact">Contact</NavLink>
 
-            <button className="cart-route">Cart</button>
+            <NavLink className="footer-button" to="/cart">Cart</NavLink>
 
         </div>
     )
