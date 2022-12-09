@@ -20,15 +20,18 @@ export default function Cart({ children }) {
     });
   }
 
-  console.log(cart);
   return (
     <div>
       <h1>Cart</h1>
+
       <div>{renderCart()}</div>
+
       <div>
         Your Total Comes To- ${renderTotal() || "N/A"}
+
         <button>Check-Out</button>
       </div>
+      
       <div>
         <button onClick={clearCart}>Clear Cart</button>
       </div>

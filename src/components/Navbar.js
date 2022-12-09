@@ -1,14 +1,16 @@
-import { NavLink} from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 
 
 export default function Navbar(){
+    
 
     return(
         <div className="navbar">
             <div className= "title-bar">
                 <div className="logo">Logo</div>
-
-                <div className="shopping-cart">Cart</div>
+                <div className="shopping-cart">
+                    <NavLink className= "shopping-cart-button" to="/cart">Cart</NavLink>
+                </div>
             </div>
 
             <div className= "product-link-bar">

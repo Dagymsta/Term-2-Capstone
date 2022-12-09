@@ -22,8 +22,11 @@ export default function MerchItem(props) {
             <h5>
                 <Link to={`/products/${id}`}>{title}</Link>
             </h5>
+
             <img src={image} alt="" />
+
             <h4>{Truncate()}</h4>
+            
             <button onClick={() => props.addProduct(props.product)}>
                 Add to cart
             </button>

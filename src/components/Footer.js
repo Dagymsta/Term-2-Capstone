@@ -8,7 +8,6 @@ export default function Footer() {
             <NavLink className="footer-button" to="/contact">Contact</NavLink>
 
             <NavLink className="footer-button" to="/cart">Cart</NavLink>
-
-        </div>
+    </div>
     )
 }

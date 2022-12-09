@@ -20,7 +20,6 @@ export default function CartProvider({ children }) {
         cart,
         addProduct,
         clearCart,
-
     };
 
     return (
