@@ -1,7 +1,9 @@
 import { Link } from "react-router-dom";
 
+
+
 export default function CartItems(props) {
-    const { image, id, description, title }= props.product;
+    const { image, id, description, title, price }= props.product;
 
     return(
         <div>
@@ -12,6 +14,10 @@ export default function CartItems(props) {
             <img src={image} alt="" />
             
             <h4>{description}</h4>
+
+            <h3>${price}</h3>
+
+            
         </div>
     );
 }

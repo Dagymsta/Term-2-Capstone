@@ -16,8 +16,6 @@ export default function App() {
    <div className="App">
     <BrowserRouter>
       <CartProvider>
-
-
        <Switch> 
         <>
       <Navbar/>

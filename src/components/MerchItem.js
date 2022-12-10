@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 
+
 export default function MerchItem(props) {
     const { image, id, description, title }= props.product;
 
@@ -18,14 +19,14 @@ export default function MerchItem(props) {
       }
 
     return(
-        <div>
+        <div className="item">
             <h5>
                 <Link to={`/products/${id}`}>{title}</Link>
             </h5>
 
             <img src={image} alt="" />
 
-            <h4>{Truncate()}</h4>
+            <h3>{Truncate()}</h3>
             
             <button onClick={() => props.addProduct(props.product)}>
                 Add to cart

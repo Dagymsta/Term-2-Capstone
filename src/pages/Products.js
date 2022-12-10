@@ -3,6 +3,8 @@ import { useContext, useEffect, useState } from "react";
 import MerchItem from "../components/MerchItem";
 import { CartContext } from "../context/CartProvider";
 
+import "../styles/merchitem.scss"
+
 
 export default function Products() {
     const [merch, setMerch] = useState({});
@@ -23,6 +25,7 @@ export default function Products() {
         .then((res) => res.json())
 
         .then((data) => {
+            Object.keys(data).forEach(key => data[key].qty = 0)
             setMerch(data);
         })
         .catch((err) => {
@@ -32,32 +35,32 @@ export default function Products() {
     }, [category]);
 
     return(
-        <div>
+        <div className="page-container">
             <div className="title">
                 <h1>Products</h1> 
             </div>
 
-            <div className= "filter-button">
+            <div className= "filter-buttons">
                 <button onClick={() => setCategory("/category/jewelery")}>
-                    jewelery
+                    Jewelery
                 </button>
 
                 <button onClick={() => setCategory("/category/electronics")}>
-                    electronics
+                    Electronics
                 </button>
 
                 <button onClick={() => setCategory("/category/men's clothing")}>
-                    men's clothing
+                    Men's clothing
                 </button>
 
                 <button onClick={() => setCategory("/category/women's clothing")}>
-                    women's clothing
+                    Women's clothing
                 </button>
             </div>
 
             <div>{merch.length > 0 ? renderMerch() : "...loading"}</div>
 
-            <div>
+            <div className="button-wrapper">
                 <button onClick={clearCart}>Clear Cart</button>
             </div>
       </div>
