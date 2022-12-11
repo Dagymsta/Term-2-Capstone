@@ -22,17 +22,21 @@ export default function Cart({ children }) {
 
   return (
     <div>
-      <h1>Cart</h1>
+      <div className="title">
+        <h1>Cart</h1>
+      </div>
 
-      <div>{renderCart()}</div>
+      <div className="product-wrapper">
+        {renderCart()
+        }</div>
 
-      <div>
-        Your Total Comes To- ${renderTotal() || "N/A"}
+      <div className="total-wrapper">
+        <p>Your Total- ${renderTotal() || "0"}</p>
 
         <button>Check-Out</button>
       </div>
       
-      <div>
+      <div className="clear-cart-wrapper">
         <button onClick={clearCart}>Clear Cart</button>
       </div>
     </div>

@@ -6,16 +6,16 @@ export default function CartItems(props) {
     const { image, id, description, title, price }= props.product;
 
     return(
-        <div>
-            <h5>
+        <div className="product-container">
+            <h1>
                 <Link to={`/products/${id}`}>{title}</Link>
-            </h5>
+            </h1>
 
             <img src={image} alt="" />
             
-            <h4>{description}</h4>
+            <h3>{description}</h3>
 
-            <h3>${price}</h3>
+            <h2>${price}</h2>
 
             
         </div>

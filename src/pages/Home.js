@@ -6,6 +6,9 @@ import "../styles/navbar.scss"
 import "../styles/home.scss"
 import "../styles/footer.scss"
 import "../styles/products.scss"
+import "../styles/contact.scss"
+import "../styles/cartitems.scss"
+import "../styles/cart.scss"
 
 export default function Home() {
 
