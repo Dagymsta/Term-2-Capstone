@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 
+
 export default function SingleMerchItem(props){
     const [merch, setMerch] = useState({});
 
@@ -16,17 +17,19 @@ export default function SingleMerchItem(props){
     },[props.match.params.id]);
 
     return (
-        <div>
-            <h1> Merchandise</h1>
-
+        <div className="item">
+                <h1>Product</h1>
             <div>
                 <h3>
                     Item: {merch.title} Available: {merch.rating?.count}
                 </h3>
 
                 <p>{merch.description}</p>
-                
+
+                <p className="price">${merch.price}</p>
+            <div class="img-wrapper">
                 <img src={merch.image} alt=""/>
+            </div>
             </div>
         </div>
     );

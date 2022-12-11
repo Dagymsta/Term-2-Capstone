@@ -9,6 +9,7 @@ import "../styles/products.scss"
 import "../styles/contact.scss"
 import "../styles/cartitems.scss"
 import "../styles/cart.scss"
+import "../styles/singlemerchitem.scss"
 
 export default function Home() {
 
