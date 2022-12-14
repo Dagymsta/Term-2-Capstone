@@ -1,8 +1,10 @@
-import { useEffect, useState } from "react";
+import { useContext, useEffect, useState } from "react";
+import { CartContext } from "../context/CartProvider";
 
 
 export default function SingleMerchItem(props){
     const [merch, setMerch] = useState({});
+    const {addProduct}= useContext(CartContext)
 
     useEffect(() => {
         fetch(`https://fakestoreapi.com/products/${props.match.params.id}`)
@@ -15,7 +17,7 @@ export default function SingleMerchItem(props){
             });
 
     },[props.match.params.id]);
-
+    
     return (
         <div className="item">
                 <h1>Product</h1>
@@ -27,9 +29,14 @@ export default function SingleMerchItem(props){
                 <p>{merch.description}</p>
 
                 <p className="price">${merch.price}</p>
-            <div class="img-wrapper">
-                <img src={merch.image} alt=""/>
-            </div>
+
+                <div className="img-wrapper">
+                    <img src={merch.image} alt=""/>
+                </div>
+
+                <button onClick={() => addProduct(merch)}>
+                Add to cart
+                </button>
             </div>
         </div>
     );

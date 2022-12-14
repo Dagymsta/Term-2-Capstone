@@ -22,7 +22,6 @@ export default function CartProvider({ children }) {
         clearCart,
 
     };
-
     return (
         <CartContext.Provider value={cartState}>{children}</CartContext.Provider>
     );

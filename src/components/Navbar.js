@@ -1,15 +1,23 @@
 import { NavLink } from 'react-router-dom';
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 
 export default function Navbar(){
     
-
     return(
         <div className="navbar">
             <div className= "title-bar">
-                <div className="logo">Logo</div>
+                <div className="logo-wrapper">
+                    <div className="logo">
+                        <FontAwesomeIcon icon="fas fa-user-astronaut" />
+                        <span>SpaceMercMerch</span>
+                    </div>
+                </div>
+
                 <div className="shopping-cart">
-                    <NavLink className= "shopping-cart-button" to="/cart">Cart</NavLink>
+                    <NavLink className= "shopping-cart-button" to="/cart">
+                        <FontAwesomeIcon icon="shopping-cart" /> 
+                    </NavLink>
                 </div>
             </div>
 

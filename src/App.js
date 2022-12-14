@@ -10,6 +10,9 @@ import Navbar from "./components/Navbar"
 import Footer from "./components/Footer"
 import CartProvider from "./context/CartProvider"
 import SingleMerchItem from "./pages/SingleMerchItem";
+import icons from "./components/Icons";
+
+icons();
 
 export default function App() {
   return (

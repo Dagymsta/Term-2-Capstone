@@ -2,18 +2,21 @@
    
     display: flex;
     flex-direction: column ;
-    margin-bottom: 40px;
+  
     .clothing-ad-container{
         
         display: flex;
         height:600px;
         
         .image-left{
-            border: red solid 1px;
             display: flex;
-            width: 50%;
-            justify-content: center;
+            width: 100%;
+            justify-content: flex-start;
             align-items: center;
+            background-image: url("../images/astrolove.jpg");
+            background-position: left ;
+            background-size: cover;
+            background-repeat: no-repeat;
         }
 
         .advertisement{
@@ -21,7 +24,7 @@
             display: flex;
             flex-direction: column;
             justify-content: center;
-            align-items: center;
+            align-items: left;
             width: 50%;
             .ad-button-wrapper{
           
@@ -41,6 +44,9 @@
                     border-radius: 20px;
                     color: white;
                     font-size: xx-large;
+                    margin-left: 200px;
+                    font-weight: 900;
+                    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
                         &:hover{
                             cursor: pointer;
                             background-color: white;
