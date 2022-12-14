@@ -74,3 +74,64 @@
         }   
     }
 }
+@media(max-width:435px){
+    .navbar{
+        display:flex;
+        flex-direction: column;
+        height:105px;
+        border-bottom: black solid 4px;
+        .title-bar{
+            display:flex;
+            height:70px;
+            color: white;
+            background-color: #15374f;
+            border-bottom: black solid 3px;
+            .logo-wrapper{
+                display: flex;
+                align-items: center;
+                padding-left: 60px;
+                width:50%;
+                .logo{
+                    display: flex;
+                    width: 200px;
+                    height:40px;
+                    align-items: center;
+                    justify-content: center;
+                    font-size: larger;
+                    svg{
+                        font-size: 3rem;
+                    }
+                    span{
+                       font-weight: 900;
+                       font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+                    }
+                }
+            }
+            .shopping-cart{
+                display: flex;
+                justify-content: flex-end;
+                align-items: center;
+                padding-right: 30px;
+                width: 50%;
+                .shopping-cart-button{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    width: 40px;
+                    height: 40px;
+                    color: white;
+                    font-size: x-large;
+                }
+            }
+        }
+        .product-link-bar{
+            display: flex;
+            justify-content: space-around;
+            width:100%;
+            height: 30px;
+            .nav-button{
+               @include title-bar-buttons
+            }   
+        }
+    }
+}

@@ -46,3 +46,53 @@
         }
     }
 }
+@media(max-width:425px){
+    .item{
+        display: flex;
+        flex-direction: column;
+        width: 96%;
+        margin-left: 0px;
+        margin-bottom: 30px;
+        margin-top: 30px;
+        background-color: rgb(232, 232, 232);
+        border: black 10px solid;
+    
+        h5 {
+            font-size: large;
+            text-decoration: none;
+            padding-left:20px;
+            a{
+                color: black; 
+            }
+            
+        }
+        img{
+            width:75%;
+            height:450px;
+            padding-left:50px;
+        }
+        h3 {
+            font-size: large;
+            font-family:Arial, Helvetica, sans-serif;
+            padding-left: 20px;
+            margin-top: 30px;
+        }
+        button {
+            width:300px;
+            height: 60px;
+            background-color: rgb(18, 84, 18);
+            color:white;
+            font-size: x-large;
+            border-radius: 10px;
+            margin-left:20px;
+            margin-bottom: 20px;
+            margin-top: 20px;
+            &:hover{
+                cursor: pointer;
+                color: rgb(18, 84, 18);
+                background-color: white;
+                border: black 1px solid;
+            }
+        }
+    }
+}

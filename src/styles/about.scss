@@ -11,3 +11,18 @@
         margin-bottom: 40px;
     }
 }
+@media(max-width:425px){
+    .text-container {
+        width: 100%;
+        margin-left: 40px;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        h2{
+            text-decoration: underline;
+            margin-top: 40px;
+        }
+        p {
+            font-size: large;
+            margin-bottom: 40px;
+        }
+    }
+}
